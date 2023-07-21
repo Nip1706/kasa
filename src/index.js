@@ -1,33 +1,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
+  Outlet
 } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar.jsx';
-import Footer from './components/Footer/Footer.jsx';
+import Footer from '../src/Layout/Footer/Footer.jsx'
+import Main from './Layout/Main/Main.jsx';
+import HomePage from '../src/pages/HomePage.jsx';
+import ApartmentPage from '../src/pages/Apartmentpage.jsx'
+
+const HeaderFooterLayout = () => {
+  return (
+    <>
+    <Navbar />
+    <Main>
+    <Outlet />
+    </Main>
+    <Footer />
+    </>
+  )
+}
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element: 
-    <App />,
-    errorElement: <h1>404 not found</h1>
+    element: <HeaderFooterLayout />,
+    errorElement: <h1>404 not found</h1>,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />
+      },
+      {
+        path: "/flat",
+        element: <ApartmentPage />
+      },
+      {
+        path: "/about",
+        element: <h1>À propos</h1>
+      }
+    ]
   },
-  {
-    path: "/flat",
-    element: <h1>Nos appartements</h1>
-  },
-  {
-    path: "/about",
-    element: 
-    <div>
-      <Navbar /> 
-      <Footer />
-    </div>
-
-  }
 ])
 
 

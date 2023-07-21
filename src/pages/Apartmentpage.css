@@ -1,0 +1,29 @@
+.apartment-page {
+    color: #ff6060;
+}
+
+.apartment-page h1{
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.apartment-page h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.apartment-page .apartment__tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+    gap: 1rem;
+}
+.apartment__tags span {
+    background-color: #ff6060;
+    color: white;
+    padding: 0.3em 1em;
+    border-radius: 0.7rem;
+    text-align: center;
+}
+

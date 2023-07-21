@@ -1,0 +1,41 @@
+.apartment__description p {
+    margin-block: 0;
+}
+
+.description__header {
+    background-color: #ff6060;
+    color: #F6F6F6;
+    padding: 0.7em 1em;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description__content {
+    background-color: #F6F6F6;
+    color: #ff6060;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    position: relative;
+    z-index: -1;
+    top: -0.3rem;
+}
+
+.description__header i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.apartment__description__area {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (width <= 768px) {
+    .apartment__description__area {
+        flex-direction: column;
+    }
+}
+
+
