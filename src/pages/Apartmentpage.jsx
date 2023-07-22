@@ -1,8 +1,8 @@
 import React from 'react'
-import ApartmentDescription from '../components/ApartmentDescription/ApartmentDescription.jsx'
+import DescriptionPanel from '../components/DescriptionPanel/DescriptionPanel.jsx'
 import './Apartmentpage.css'
-import ApartmentBanner from '../components/ApartmentBanner.jsx'
-import ApartmentHeader from '../components/ApartmentHeader.jsx'
+import ImageBanner from '../components/ImageBanner/ImageBanner.jsx'
+import ApartmentHeader from '../components/ApartmentHeader/ApartmentHeader.jsx'
 
 
 
@@ -11,11 +11,11 @@ import ApartmentHeader from '../components/ApartmentHeader.jsx'
 function Apartmentpage() {
   return (
     <div className='apartment-page'>
-        <ApartmentBanner />
+        <ImageBanner />
         <ApartmentHeader />
         <div className='apartment__description__area'>
-        <ApartmentDescription />
-        <ApartmentDescription />
+        <DescriptionPanel />
+        <DescriptionPanel />
         </div>
     </div>
   )

@@ -1,14 +1,14 @@
 import React from 'react'
-import './ApartmentBanner.css'
+import './ImageBanner.css'
 
-function ApartmentBanner() {
+function ImageBanner() {
   return (
     <div>
-        <div>
+        <div className='image__banner'>
             <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg" alt="" />
         </div>
     </div>
   )
 }
 
-export default ApartmentBanner
+export default ImageBanner

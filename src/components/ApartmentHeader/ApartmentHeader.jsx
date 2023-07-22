@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components/ApartmentHeader.css'
+import './ApartmentHeader.css'
 
 function ApartmentHeader() {
   return (

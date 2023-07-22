@@ -1,16 +1,16 @@
 import React from 'react'
 import './ApartmentGrid.css'
-import Apartment from '../Apartment/Apartment.jsx'
+import ApartmentCard from '../ApartmentCard/ApartmentCard.jsx'
 
 function ApartmentGrid() {
   return (
     <div className='grid'>
-        <Apartment />
-        <Apartment />
-        <Apartment />
-        <Apartment />
-        <Apartment />
-        <Apartment />
+        <ApartmentCard />
+        <ApartmentCard />
+        <ApartmentCard />
+        <ApartmentCard />
+        <ApartmentCard />
+        <ApartmentCard />
         </div>
   )
 }

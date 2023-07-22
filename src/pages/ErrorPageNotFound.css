@@ -1,0 +1,19 @@
+.error__page {
+    color: #ff6060;
+    text-align: center;
+}
+
+.error__page h1 {
+    font-size: 150px;
+    margin-bottom: 0.5em;
+}
+
+.error__page h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.error__page a {
+    color: #ff6060;
+}
+

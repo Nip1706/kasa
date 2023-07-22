@@ -1,4 +1,8 @@
-.apartment__description p {
+.description__panel {
+    margin-bottom: 1rem;
+}
+
+.description__panel p {
     margin-block: 0;
 }
 
