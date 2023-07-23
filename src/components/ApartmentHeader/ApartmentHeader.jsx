@@ -1,35 +1,37 @@
 import React from 'react'
 import './ApartmentHeader.css'
 
-function ApartmentHeader() {
+function ApartmentHeader(props) {
+
+  const flat = props.flat 
+  const name = flat.host.name 
+  const [firstName, lastName] = name.split(" ")
   return (
     <div>
-                <div className='apartment__header'>
-        <div className='apartment__title'>
-            <h1>Magnifique appartement proche Canal Saint Martin</h1>
-            <h2>Ile de France - Paris 10e</h2>
-            <div className='apartment__tags'>
-            <span>Cosy</span>
-            <span>Canal</span>
-            <span>Paris 10</span>  
+        <div className='apartment__header'>
+            <div className='apartment__title'>
+            <h1>{flat.title}</h1>
+            <h2>{flat.location}</h2>
+                <div className='apartment__tags'>
+                {flat.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                ))}  
             </div>
         </div>
         <div className="apartment__owner">
             <div className='apartment__owner__details'>
             <h3>
-                <span>Alexandre</span> 
-                <span>Dumas</span>
+                <span>{firstName}</span> 
+                <span>{lastName}</span>
             </h3>
             <div className="apartment__owner__badge">
-                <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg" alt="" />
+                <img src={flat.host.picture} alt="" />
             </div>
             </div>
             <div className='apartment__owner__star'>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star grey"></i>
+            {[1, 2, 3, 4, 5].map((number) => (
+            <i key={number} className={props.flat.rating >= number ? 'fa-solid fa-star on' : 'fa-solid fa-star'}></i>
+            ))}
             </div>
         </div>
         </div>

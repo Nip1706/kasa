@@ -65,17 +65,17 @@
     justify-content: center;
     align-items: center;
     gap: 0.8em;
+    color: #F6F6F6;
 }
 
 .apartment__owner__star .fa-solid{
     width: 15px;
     height: 15px;
-    color: #ff6060;
     font-size: 1rem;
 }
 
-.apartment__owner__star .fa-solid.grey {
-    color: #F6F6F6;
+.apartment__owner__star .fa-solid.on {
+    color: #ff6060;
 }
 
 .apartment-page .apartment__tags {
