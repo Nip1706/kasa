@@ -12,7 +12,7 @@ function ImageBanner(props) {
     return ''
   }
 
-  const movetOnext = () => {
+  const moveToNext = () => {
     setCurrentPicture((currentPicture + 1) % pictures.length)
   }
 
@@ -30,24 +30,25 @@ function ImageBanner(props) {
     }
   
 
-  const getcarrouselOrDefaultImage = () => {
+  const getCarrouselOrDefaultImage = () => {
     if (!arePicturesAvailable()) {
-      return <img src='https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg' className='show'/>
+      return <img src='https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg' className='show' alt='carrousel'/>
     }
     return pictures.map((pictures, i) => (
-      <img key={pictures} src={pictures} alt='' className={getClassName(i)}></img>
+      <img key={pictures} src={pictures} alt='carrousel' className={getClassName(i)}></img>
     ))  
   }
 
 
   return (
         <div className='image__banner'>
-          <div className='image__container'>{getcarrouselOrDefaultImage()}</div>
+          <div className='image__container'>{getCarrouselOrDefaultImage()}</div>
           {arePicturesAvailable() && (
             <>
-              <button className='btn btn-next' onClick={ movetOnext }>
+              <button className='btn btn-next' onClick={ moveToNext }>
                 <i className='fas fa-chevron-right'></i>
               </button>
+              <span className='slide__counter'>{currentPicture + 1} / {pictures.length}</span>
               <button className='btn btn-previous' onClick={ moveToPrevious }>
                 <i className='fas fa-chevron-left'></i>
               </button>

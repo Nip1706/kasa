@@ -53,3 +53,12 @@
 .image__container img.show {
     opacity: 1;
 }
+
+.image__banner .slide__counter {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 0 1rem;
+    color: white;
+}

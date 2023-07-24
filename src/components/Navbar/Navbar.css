@@ -30,3 +30,35 @@
 .navbar *:first-child{
     margin-right: auto;
 }
+
+@media screen and (width <= 425px) {
+    .navbar__logo img {
+        width: 140px;
+    }
+    .navbar__accueil {
+        font-size: 10px;
+    }
+    
+    .navbar__propos {
+        font-size: 10px;
+    }
+   
+}
+
+@media screen and (width <= 320px) {
+    .navbar__logo img {
+        width: 100px;
+    }
+    .navbar__accueil {
+        font-size: 10px;
+    }
+    
+    .navbar__propos {
+        font-size: 10px;
+    }
+   
+}
+
+
+
+
