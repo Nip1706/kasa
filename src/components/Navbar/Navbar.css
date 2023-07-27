@@ -31,6 +31,15 @@
     margin-right: auto;
 }
 
+.navbar__accueil{
+    font-weight: 400;
+}
+
+.navbar__propos{
+    font-weight: 400;
+}
+
+
 @media screen and (width <= 425px) {
     .navbar__logo img {
         width: 140px;
