@@ -8,10 +8,10 @@ import {
 import Navbar from './components/Navbar/Navbar.jsx';
 import Footer from '../src/Layout/Footer/Footer.jsx'
 import Main from './Layout/Main/Main.jsx';
-import HomePage from '../src/pages/HomePage.jsx';
-import ApartmentPage from '../src/pages/Apartmentpage.jsx'
-import About from '../src/pages/About.jsx'
-import ErrorPageNotFound from './pages/ErrorpageNotFound.jsx'
+import HomePage from './pages/Homepage/HomePage.jsx';
+import ApartmentPage from './pages/Apartmentpage/Apartmentpage.jsx'
+import About from './pages/About/About.jsx'
+import ErrorPageNotFound from './pages/ErrorPageNotFound/ErrorpageNotFound.jsx'
 
 const HeaderFooterLayout = () => {
   return (

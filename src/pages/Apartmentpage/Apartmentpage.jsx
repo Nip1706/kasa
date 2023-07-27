@@ -1,8 +1,8 @@
-import DescriptionPanel from '../components/DescriptionPanel/DescriptionPanel.jsx'
+import DescriptionPanel from '../../components/DescriptionPanel/DescriptionPanel.jsx'
 import './Apartmentpage.css'
-import ImageBanner from '../components/ImageBanner/ImageBanner.jsx'
-import ApartmentHeader from '../components/ApartmentHeader/ApartmentHeader.jsx'
-import { useApartment } from '../hooks/useApartmentPage.jsx'
+import ImageBanner from '../../components/ImageBanner/ImageBanner.jsx'
+import ApartmentHeader from '../../components/ApartmentHeader/ApartmentHeader.jsx'
+import { useApartment } from '../../hooks/useApartmentPage.jsx'
 
 
 

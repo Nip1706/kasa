@@ -1,6 +1,6 @@
 import React from 'react'
-import ImageBanner from '../components/ImageBanner/ImageBanner.jsx'
-import DescriptionPanel from '../components/DescriptionPanel/DescriptionPanel.jsx'
+import ImageBanner from '../../components/ImageBanner/ImageBanner.jsx'
+import DescriptionPanel from '../../components/DescriptionPanel/DescriptionPanel.jsx'
 import './About.css'
 
 function About() {

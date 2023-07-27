@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './ErrorPageNotFound.css'
-import Navbar from '../components/Navbar/Navbar.jsx'
-import Main from '../Layout/Main/Main'
+import Navbar from '../../components/Navbar/Navbar.jsx'
+import Main from '../../Layout/Main/Main.jsx'
 
 function ErrorpageNotFound() {
   return (
