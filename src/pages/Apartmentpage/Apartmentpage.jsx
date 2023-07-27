@@ -2,7 +2,7 @@ import DescriptionPanel from '../../components/DescriptionPanel/DescriptionPanel
 import './Apartmentpage.css'
 import ImageBanner from '../../components/ImageBanner/ImageBanner.jsx'
 import ApartmentHeader from '../../components/ApartmentHeader/ApartmentHeader.jsx'
-import { useApartment } from '../../hooks/useApartmentPage.jsx'
+import { useApartment } from '../../hooks/useApartmentPage/useApartmentPage.jsx'
 
 
 

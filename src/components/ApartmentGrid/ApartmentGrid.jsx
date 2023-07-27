@@ -1,6 +1,6 @@
 import './ApartmentGrid.css'
 import ApartmentCard from '../ApartmentCard/ApartmentCard.jsx'
-import { useApartments } from '../../hooks/useApartments'
+import { useApartments } from '../../hooks/useApartments/useApartments'
 
 
 function ApartmentGrid() {
