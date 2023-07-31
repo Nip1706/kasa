@@ -1,6 +1,6 @@
 import React from 'react'
 import './ApartmentHeader.css'
-import ApartmentRating from '../../ApartmentStars/ApartmentStars'
+import ApartmentRating from '../ApartmentStars/ApartmentStars'
 
 function ApartmentHeader(props) {
 
