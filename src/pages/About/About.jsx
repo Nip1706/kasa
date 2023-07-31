@@ -1,20 +1,33 @@
-import React from 'react'
-import ImageBanner from '../../components/ImageBanner/ImageBanner.jsx'
-import DescriptionPanel from '../../components/DescriptionPanel/DescriptionPanel.jsx'
-import './About.css'
+
+import React, { useState, useEffect } from 'react';
+import ImageBanner from '../../components/ImageBanner/ImageBanner.jsx';
+import DescriptionPanel from '../../components/DescriptionPanel/DescriptionPanel.jsx';
+import './About.css';
 
 function About() {
+  const [rules, setRules] = useState([]);
+
+  useEffect(() => {
+    // Charger la base de données JSON depuis le fichier
+    fetch('rules.json')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Data from JSON:', data); // Vérifiez les données récupérées ici
+        setRules(data.Rules);
+      })
+      .catch((error) => console.error('Erreur lors du chargement du JSON : ', error));
+  }, []);
+
   return (
     <>
-    <ImageBanner />
-        <div className='about__container'>
-        <DescriptionPanel title='Fiabilité' content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sit amet odio ac condimentum. Curabitur pulvinar neque risus, ac accumsan nisl ullamcorper ut. Integer condimentum, risus a molestie lobortis, erat leo euismod purus, at dictum nunc tortor eu quam. Pellentesque justo metus, porta vel blandit in, finibus id est."/>
-        <DescriptionPanel title='Respect' content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sit amet odio ac condimentum. Curabitur pulvinar neque risus, ac accumsan nisl ullamcorper ut. Integer condimentum, risus a molestie lobortis, erat leo euismod purus, at dictum nunc tortor eu quam. Pellentesque justo metus, porta vel blandit in, finibus id est."/>
-        <DescriptionPanel title='Service' content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sit amet odio ac condimentum. Curabitur pulvinar neque risus, ac accumsan nisl ullamcorper ut. Integer condimentum, risus a molestie lobortis, erat leo euismod purus, at dictum nunc tortor eu quam. Pellentesque justo metus, porta vel blandit in, finibus id est."/>
-        <DescriptionPanel title='Sécurité' content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sit amet odio ac condimentum. Curabitur pulvinar neque risus, ac accumsan nisl ullamcorper ut. Integer condimentum, risus a molestie lobortis, erat leo euismod purus, at dictum nunc tortor eu quam. Pellentesque justo metus, porta vel blandit in, finibus id est."/>
-        </div>
+      <ImageBanner />
+      <div className='about__container'>
+        {rules.map((rule, index) => (
+          <DescriptionPanel key={index} title={rule.title} content={rule.content} />
+        ))}
+      </div>
     </>
-  )
+  );
 }
 
-export default About
+export default About;

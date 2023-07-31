@@ -1,5 +1,6 @@
 import React from 'react'
 import './ApartmentHeader.css'
+import ApartmentRating from '../../ApartmentStars/ApartmentStars'
 
 function ApartmentHeader(props) {
 
@@ -28,10 +29,8 @@ function ApartmentHeader(props) {
                 <img src={flat.host.picture} alt="" />
             </div>
             </div>
-            <div className='apartment__owner__star'>
-            {[1, 2, 3, 4, 5].map((number) => (
-            <i key={number} className={props.flat.rating >= number ? 'fa-solid fa-star on' : 'fa-solid fa-star'}></i>
-            ))}
+            <div>
+            <ApartmentRating rating={props.flat.rating} />            
             </div>
         </div>
         </div>

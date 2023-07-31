@@ -1,0 +1,22 @@
+{
+    "Rules": [
+      {
+        "title": "Fiabilité",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sit amet odio ac condimentum. Curabitur pulvinar neque risus, ac accumsan nisl ullamcorper ut. Integer condimentum, risus a molestie lobortis, erat leo euismod purus, at dictum nunc tortor eu quam. Pellentesque justo metus, porta vel blandit in, finibus id est."
+      },
+      {
+        "title": "Respect",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sit amet odio ac condimentum. Curabitur pulvinar neque risus, ac accumsan nisl ullamcorper ut. Integer condimentum, risus a molestie lobortis, erat leo euismod purus, at dictum nunc tortor eu quam. Pellentesque justo metus, porta vel blandit in, finibus id est."
+      },
+      {
+        "title": "Service",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sit amet odio ac condimentum. Curabitur pulvinar neque risus, ac accumsan nisl ullamcorper ut. Integer condimentum, risus a molestie lobortis, erat leo euismod purus, at dictum nunc tortor eu quam. Pellentesque justo metus, porta vel blandit in, finibus id est."
+      },
+      {
+        "title": "Sécurité",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sit amet odio ac condimentum. Curabitur pulvinar neque risus, ac accumsan nisl ullamcorper ut. Integer condimentum, risus a molestie lobortis, erat leo euismod purus, at dictum nunc tortor eu quam. Pellentesque justo metus, porta vel blandit in, finibus id est."
+      }
+    ]
+  }
+
+  
